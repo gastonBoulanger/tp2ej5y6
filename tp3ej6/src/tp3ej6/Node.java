@@ -7,15 +7,24 @@ public class Node {
 	private Node right = null;
 
 	public Node(int num) {
-		info = num;
+		this.info = num;
 	}
 
-
-	public void setInfo(int st) {
-		info = st;
+	public Node() {
+		
 	}
 
-	
+	public void setInfo(int i) {
+		this.info = i;
+	}
+
+	public void setLeft(Node left) {
+		this.left = left;
+	}
+
+	public void setRight(Node right) {
+		this.right = right;
+	}
 
 	public int getInfo() {
 		return info;
@@ -24,8 +33,9 @@ public class Node {
 	public Node getLeft() {
 		return left;
 	}
+
 	public Node getRight() {
-		return left;
+		return right;
 	}
 
 	public void printNodeByInfo() {
